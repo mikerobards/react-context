@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ThemeContext from './ThemeContext'
 
-const ThemeContext = React.createContext()
-// Object with ThemeContext.Provider & Theme.Context.Consumer
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider value={"light"}>
+    <ThemeContext.Provider value={"dark"}>
       <App />
     </ThemeContext.Provider>
   </React.StrictMode>,
